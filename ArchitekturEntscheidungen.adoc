@@ -1,0 +1,72 @@
+== Architekturentscheidungen
+
+=== Technische Aspekte der fachlichen Umsetzung
+
+==== Entscheidung Programmiersprache
+Nachdem ein Spring Boot Starter gefordert ist die Wahl auf Java gefallen.
+Möglicherweise hätten Groovy oder Kotlin oder andere VM Sprachen eine Alternative dargestellt.
+Da der Author bislang aber mit Spring Boot nur Erfahrungen in Java gesammelt hat, wurde Java festgelegt.
+
+=== Entscheidung Entwicklungsmethode
+Entwickelt wird nach den im RADeS Projekt gesammelten Erfahrungen:
+
+* Als Hostingplattform wird github genutzt, da damit die besten Erfahrungen gesammelt wurden.
+* Agile mit Kanban Board
+* Clean Code mit CI auf Travis und Nutzung von Codacy sowie Codecov
+* Manuelles Deployment über bintray bis ins maven central
+
+=== Entscheidung Implementierung
+
+* Es wird auf Autoscanning verzichtet, damit die Endnutzer nicht zum Autoscan gezwungen werden
+* Während der Entwicklung darf Actuator zur Analyse eingebunden werden
+* Actuator wird nicht ausgeliefert, da sonst Security bereitgestellt werden muss und der Starter
+für seine Funktion beides nicht benötigt.
+
+=== Entscheidung Testvorgehen
+
+* Es wird Junit 5 verwendet
+* BDD erstmal nicht da geringe Komplexität, falls sich später User Journeys ergeben kann BDD noch eingeführt werden.
+
+=== Lessons learned
+
+* spring.factories ist essentiell wichtig für einen Starter und der Wert von
+org.springframework.boot.autoconfigure.EnableAutoConfiguration ist eine Komma separierte Liste
+voll qualifizierter Klassennamen
+* spring nimmt offensichtlich an, das Starter sich nur aktivieren wenn bestimmte Klassen gefunden werden.
+Demnach aktiviert sich der Starter nur noch wenn die nitrite Datenbank im Klassenpfad gefunden wird.
+* Damit der Endnutzer die Beanerzeugung selbst steuern kann, dürfen Beans nur erzeugt werden, wenn nicht bereits vorhanden.
+@ConditionalBeanMissing
+* In die org.springframework.boot.autoconfigure.EnableAutoConfiguration kommt alles rein was irgendwie eine Bean
+erzeugt.
+* Damit das Injizieren von Beans im Test funktioniert - stellt man sich am einfachsten ein Dummy Projekt im Test bereit.
+* man braucht diesmal kein spring-parent Projekt
+* Nitrite verhält sich anders als in einem Endnutzer Projekt welches von spring-parent-starter ableitet.
+Plötzlich wird ein ObjektMapper benötigt. -> Die Lösung hier war Mappable
+
+[literatur]
+=== Literatur und Quellen im Netz
+* https://vimeo.com/198200911 (Bau von spring-boot-starter)
+* https://www.baeldung.com/spring-boot-custom-starter
+
+=== Guter Stil
+* https://tuhrig.de/using-configurationproperties-to-separate-service-and-configuration
+
+=== Auslieferung / Paketierung
+* https://dzone.com/articles/packaging-springboot-application-with-external-dep
+* https://crunchify.com/how-to-create-build-java-project-including-all-dependencies-using-maven-maven-resources-maven-dependency-maven-jar-plugin-tutorial/
+
+
+=== Embedable Document Database
+* https://www.dizitart.org/nitrite-database/
+* https://www.dizitart.org/nitrite-database.html
+* https://dzone.com/articles/nitrite-how-to-create-an-embedded-database-for-jav
+* https://dzone.com/articles/nitrite-an-embedded-nosql-database-for-javaandroid
+* https://docs.spring.io/spring-data/data-commons/docs/1.6.1.RELEASE/reference/html/repositories.html
+* https://www.baeldung.com/spring-boot-access-h2-database-multiple-apps
+* https://www.baeldung.com/spring-bean
+
+=== Korrekte Spring Repos bauen
+https://docs.spring.io/spring-data/data-commons/docs/1.6.1.RELEASE/reference/html/repositories.html
+https://www.baeldung.com/spring-boot-access-h2-database-multiple-apps
+
+

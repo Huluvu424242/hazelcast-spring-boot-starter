@@ -1,0 +1,113 @@
+[#status]
+image:https://img.shields.io/badge/License-LGPL%20v3-blue.svg[link="https://www.gnu.org/licenses/lgpl-3.0"]
+image:https://maven-badges.herokuapp.com/maven-central/com.github.funthomas424242/nitrite-spring-boot-starter/badge.svg?style=flat["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/com.github.funthomas424242/nitrite-spring-boot-starter"]
+// image:https://api.bintray.com/packages/funthomas424242/funthomas424242-libs/nitrite-spring-boot-starter/images/download.svg[link="https://bintray.com/funthomas424242/funthomas424242-libs/nitrite-spring-boot-starter/_latestVersion"]
+image:https://travis-ci.org/FunThomas424242/nitrite-spring-boot-starter.svg?branch=master["Build Status", link="https://travis-ci.org/FunThomas424242/nitrite-spring-boot-starter"]
+image:https://api.codacy.com/project/badge/Grade/88bf76546176437ea389629a2087d1b5["Codacy code quality", link="https://www.codacy.com/app/FunThomas424242/nitrite-spring-boot-starter?utm_source=github.com&utm_medium=referral&utm_content=FunThomas424242/nitrite-spring-boot-starter&utm_campaign=Badge_Grade"]
+image:https://codecov.io/gh/FunThomas424242/nitrite-spring-boot-starter/branch/master/graph/badge.svg[link="https://codecov.io/gh/FunThomas424242/nitrite-spring-boot-starter"]
+image:http://images.webestools.com/buttons.php?frm=2&btn_type=11&txt=Scrum Board["Scrum Board,scaledwidth="15%"", link="https://github.com/FunThomas424242/nitrite-spring-boot-starter/projects/1"]
+
+image:https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square["standard-readme compilant",link="https://github.com/RichardLitt/standard-readme"]
+
+== nitrite-spring-boot-starter
+
+[#summary]
+Ein Spring Boot Starter zum Einbinden der Nitrite Datenbank
+
+
+== Inhaltsverzeichnis
+
+- link:#hintergrund[Hintergrund]
+- link:#installation[Installation]
+- link:#nutzung[Nutzung]
+- link:#literatur[Literatur und Quellen]
+- link:#projektverantwortlicher[Projektverantwortlicher]
+- link:#unterstützung[Unterstützung]
+- link:#lizenz[Lizenz]
+
+[#hintergrund]
+== Hintergrund
+Die Konfiguration externer Datenbanken wie Nitrite ist für Spring Boot Einsteiger nicht sofort klar durchschaubar.
+Außerdem müssen in jedem verwendeten spring boot Projekt bei der Einbindung der Datenbank die gleichen
+"Handgriffe" erledigt werden. Daher bietet sich ein Starter zur Einbindung an.
+
+Dieses Projekt realisiert einen solchen Starter mit folgenden Features:
+
+* Der Starter ist unabhängig von der konkret eingebundenen Nitrite Version, da er nur die Konfiguration
+und ein wenig Infrastruktur zur Verfügung stellt.
+* Der Endnutzer kann selbst entscheiden welche Nitrite Version zum Einsatz kommt ohne die Starter Version
+wechseln zu müssen.
+* Die Abhängigkeit zur Nitrite Datenbank wird im Endnutzerprojekt explizit benötigt -> klare Aussage in der pom.xml
+im Gegensatz zu transitiven Abhängigkeiten.
+
+
+[#installation]
+== Installation
+Die "Installation" erfolgt durch Einbinden in die pom.xml. Wird wie folgt erledigt:
+
+.pom.xml
+[source,xml]
+----
+<!-- nitrite db -->
+<dependency>
+  <groupId>com.github.funthomas424242</groupId>
+  <artifactId>nitrite-spring-boot-starter</artifactId>
+  <version>0.0.2</version>
+</dependency>
+<dependency>
+  <groupId>org.dizitart</groupId>
+  <artifactId>nitrite</artifactId>
+  <version>3.3.0</version>
+  <scope>compile</scope>
+</dependency>
+----
+
+Folgende Konfigurationsmöglichkeiten werden vom Starter realisiert:
+
+
+.application.properties
+[source,properties]
+----
+nitrite.dbfilePath=<path zur Datenbankdatei | empty für in-memory Datenbank>
+nitrite.username=
+nitrite.password=
+nitrite.disableautocommit=<true | false>
+nitrite.compressed=<true | false>
+----
+
+[#nutzung]
+== Nutzung
+
+Wie unter Installation beschrieben.
+
+[#projektverantwortlicher]
+== Projektverantwortlicher
+
+https://github.com/FunThomas424242[@Huluvu424242]
+
+[#unterstützung]
+== Unterstützung
+
+Unterstützung ist jederzeit erwünscht. Ein gelungener Einstieg sollte sich über Duchlesen, Prüfen/Testen, Korrigieren/Weiterentwickeln und Änderungen als Pull-Request einstellen, ergeben.
+Du kannst aber auch jederzeit gern ein Ticket öffnen unter: https://github.com/FunThomas424242/nitrite-spring-boot-starter/issues/new/choose[Ticket Erstellen].
+
+Dieses Projekt folgt den unter https://funthomas424242.github.io/nitrite-spring-boot-starter/code-of-conduct.txt[Verhaltenskodex] abgelegten Verhaltensregeln. Welche auch unter https://www.contributor-covenant.org/de/version/1/4/code-of-conduct/[Verhaltenskodex für Unterstützer] veröffentlicht wurden.
+
+=== Unterstützer
+
+Dieses Projekt lebt vom Support all seiner Unterstützer genau wie auch vom Support all jener welche nicht namentlich bekannt sind aber das Projekt im Internet bekannt machen oder anderweitig unterstützen.
+
+Vielen Dank für all Euren Suppprt! 
+
+////
+Ab 100 Sterne auf github ist eine Verwaltung über opencollective für OpenSource Projekte möglich
+This project exists thanks to all the people who contribute. 
+<a href="graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
+////
+
+[#lizenz]
+== Lizenz
+
+link:LICENSE[LGPL-3.0] © link:https://github.com/PIUGroup[PIUG]
+
+
