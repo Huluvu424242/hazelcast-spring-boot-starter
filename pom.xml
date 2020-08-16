@@ -9,7 +9,7 @@
   <packaging>jar</packaging>
   <name>Hazelcast Spring Boot Starter</name>
   <description>A spring-boot startet for the hazelcast database as embedded in-memory cluster</description>
-  <inceptionYear>2019</inceptionYear>
+  <inceptionYear>2020</inceptionYear>
   <url>https://github.com/Huluvu424242/hazelcast-spring-boot-starter</url>
   <licenses>
     <license>
