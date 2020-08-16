@@ -35,7 +35,7 @@
       <topBarContainerStyle>width: 80%;</topBarContainerStyle>
       <sideBarEnabled>false</sideBarEnabled>
       <gitHub>
-        <projectId>Huluvu424242/nitrite-spring-boot-starter</projectId>
+        <projectId>Huluvu424242/hazelcast-spring-boot-starter</projectId>
         <ribbonOrientation>left</ribbonOrientation>
         <ribbonColor>gray</ribbonColor>
       </gitHub>
@@ -55,7 +55,7 @@
   <bannerLeft>
   <name>${project.artifactId}</name>
   <!--<src>http://maven.apache.org/images/apache-maven-project-2.png</src>-->
-  <href>https://github.com/Huluvu424242/nitrite-spring-boot-starter</href>
+  <href>https://github.com/Huluvu424242/hazelcast-spring-boot-starter</href>
   </bannerLeft>
 
   <!--<bannerRight>-->
@@ -66,7 +66,7 @@
     <menu name="RADES Universum">
       <item name="RADES" href="https://PIUGroup.github.io/rades/index.html"/>
       <item name="~ Nitrit SB-Starter" href="index.html">
-        <item name="Quellen" href="https://github.com/Huluvu424242/nitrite-spring-boot-starter"/>
+        <item name="Quellen" href="https://github.com/Huluvu424242/hazelcast-spring-boot-starter"/>
         <item name="Changelog" href="changelog.html"/>
         <item name="Benutzer" href="benutzer.html"/>
         <item name="Entwickler" href="entwickler.html"/>

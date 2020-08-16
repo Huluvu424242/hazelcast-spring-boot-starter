@@ -1,15 +1,15 @@
 [#status]
 image:https://img.shields.io/badge/License-LGPL%20v3-blue.svg[link="https://www.gnu.org/licenses/lgpl-3.0"]
-image:https://maven-badges.herokuapp.com/maven-central/com.github.huluvu424242/nitrite-spring-boot-starter/badge.svg?style=flat["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/com.github.huluvu424242/nitrite-spring-boot-starter"]
-// image:https://api.bintray.com/packages/huluvu424242/huluvu424242-libs/nitrite-spring-boot-starter/images/download.svg[link="https://bintray.com/huluvu424242/huluvu424242-libs/nitrite-spring-boot-starter/_latestVersion"]
-image:https://travis-ci.org/Huluvu424242/nitrite-spring-boot-starter.svg?branch=master["Build Status", link="https://travis-ci.org/Huluvu424242/nitrite-spring-boot-starter"]
-image:https://api.codacy.com/project/badge/Grade/88bf76546176437ea389629a2087d1b5["Codacy code quality", link="https://www.codacy.com/app/Huluvu424242/nitrite-spring-boot-starter?utm_source=github.com&utm_medium=referral&utm_content=Huluvu424242/nitrite-spring-boot-starter&utm_campaign=Badge_Grade"]
-image:https://codecov.io/gh/Huluvu424242/nitrite-spring-boot-starter/branch/master/graph/badge.svg[link="https://codecov.io/gh/Huluvu424242/nitrite-spring-boot-starter"]
-image:http://images.webestools.com/buttons.php?frm=2&btn_type=11&txt=Scrum Board["Scrum Board,scaledwidth="15%"", link="https://github.com/Huluvu424242/nitrite-spring-boot-starter/projects/1"]
+image:https://maven-badges.herokuapp.com/maven-central/com.github.huluvu424242/hazelcast-spring-boot-starter/badge.svg?style=flat["Maven Central", link="https://maven-badges.herokuapp.com/maven-central/com.github.huluvu424242/hazelcast-spring-boot-starter"]
+// image:https://api.bintray.com/packages/huluvu424242/huluvu424242-libs/hazelcast-spring-boot-starter/images/download.svg[link="https://bintray.com/huluvu424242/huluvu424242-libs/hazelcast-spring-boot-starter/_latestVersion"]
+image:https://travis-ci.org/Huluvu424242/hazelcast-spring-boot-starter.svg?branch=master["Build Status", link="https://travis-ci.org/Huluvu424242/hazelcast-spring-boot-starter"]
+image:https://api.codacy.com/project/badge/Grade/88bf76546176437ea389629a2087d1b5["Codacy code quality", link="https://www.codacy.com/app/Huluvu424242/hazelcast-spring-boot-starter?utm_source=github.com&utm_medium=referral&utm_content=Huluvu424242/hazelcast-spring-boot-starter&utm_campaign=Badge_Grade"]
+image:https://codecov.io/gh/Huluvu424242/hazelcast-spring-boot-starter/branch/master/graph/badge.svg[link="https://codecov.io/gh/Huluvu424242/hazelcast-spring-boot-starter"]
+image:http://images.webestools.com/buttons.php?frm=2&btn_type=11&txt=Scrum Board["Scrum Board,scaledwidth="15%"", link="https://github.com/Huluvu424242/hazelcast-spring-boot-starter/projects/1"]
 
 image:https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square["standard-readme compilant",link="https://github.com/RichardLitt/standard-readme"]
 
-== nitrite-spring-boot-starter
+== hazelcast-spring-boot-starter
 
 [#summary]
 Ein Spring Boot Starter zum Einbinden der Nitrite Datenbank
@@ -48,15 +48,15 @@ Die "Installation" erfolgt durch Einbinden in die pom.xml. Wird wie folgt erledi
 .pom.xml
 [source,xml]
 ----
-<!-- nitrite db -->
+<!-- hazelcast db -->
 <dependency>
   <groupId>com.github.huluvu424242</groupId>
-  <artifactId>nitrite-spring-boot-starter</artifactId>
+  <artifactId>hazelcast-spring-boot-starter</artifactId>
   <version>0.0.2</version>
 </dependency>
 <dependency>
   <groupId>org.dizitart</groupId>
-  <artifactId>nitrite</artifactId>
+  <artifactId>hazelcast</artifactId>
   <version>3.3.0</version>
   <scope>compile</scope>
 </dependency>
@@ -68,11 +68,11 @@ Folgende Konfigurationsmöglichkeiten werden vom Starter realisiert:
 .application.properties
 [source,properties]
 ----
-nitrite.dbfilePath=<path zur Datenbankdatei | empty für in-memory Datenbank>
-nitrite.username=
-nitrite.password=
-nitrite.disableautocommit=<true | false>
-nitrite.compressed=<true | false>
+hazelcast.dbfilePath=<path zur Datenbankdatei | empty für in-memory Datenbank>
+hazelcast.username=
+hazelcast.password=
+hazelcast.disableautocommit=<true | false>
+hazelcast.compressed=<true | false>
 ----
 
 [#nutzung]
@@ -89,9 +89,9 @@ https://github.com/Huluvu424242[@Huluvu424242]
 == Unterstützung
 
 Unterstützung ist jederzeit erwünscht. Ein gelungener Einstieg sollte sich über Duchlesen, Prüfen/Testen, Korrigieren/Weiterentwickeln und Änderungen als Pull-Request einstellen, ergeben.
-Du kannst aber auch jederzeit gern ein Ticket öffnen unter: https://github.com/Huluvu424242/nitrite-spring-boot-starter/issues/new/choose[Ticket Erstellen].
+Du kannst aber auch jederzeit gern ein Ticket öffnen unter: https://github.com/Huluvu424242/hazelcast-spring-boot-starter/issues/new/choose[Ticket Erstellen].
 
-Dieses Projekt folgt den unter https://huluvu424242.github.io/nitrite-spring-boot-starter/code-of-conduct.txt[Verhaltenskodex] abgelegten Verhaltensregeln. Welche auch unter https://www.contributor-covenant.org/de/version/1/4/code-of-conduct/[Verhaltenskodex für Unterstützer] veröffentlicht wurden.
+Dieses Projekt folgt den unter https://huluvu424242.github.io/hazelcast-spring-boot-starter/code-of-conduct.txt[Verhaltenskodex] abgelegten Verhaltensregeln. Welche auch unter https://www.contributor-covenant.org/de/version/1/4/code-of-conduct/[Verhaltenskodex für Unterstützer] veröffentlicht wurden.
 
 === Unterstützer
 

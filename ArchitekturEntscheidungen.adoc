@@ -33,7 +33,7 @@ für seine Funktion beides nicht benötigt.
 org.springframework.boot.autoconfigure.EnableAutoConfiguration ist eine Komma separierte Liste
 voll qualifizierter Klassennamen
 * spring nimmt offensichtlich an, das Starter sich nur aktivieren wenn bestimmte Klassen gefunden werden.
-Demnach aktiviert sich der Starter nur noch wenn die nitrite Datenbank im Klassenpfad gefunden wird.
+Demnach aktiviert sich der Starter nur noch wenn die hazelcast Datenbank im Klassenpfad gefunden wird.
 * Damit der Endnutzer die Beanerzeugung selbst steuern kann, dürfen Beans nur erzeugt werden, wenn nicht bereits vorhanden.
 @ConditionalBeanMissing
 * In die org.springframework.boot.autoconfigure.EnableAutoConfiguration kommt alles rein was irgendwie eine Bean
@@ -57,10 +57,10 @@ Plötzlich wird ein ObjektMapper benötigt. -> Die Lösung hier war Mappable
 
 
 === Embedable Document Database
-* https://www.dizitart.org/nitrite-database/
-* https://www.dizitart.org/nitrite-database.html
-* https://dzone.com/articles/nitrite-how-to-create-an-embedded-database-for-jav
-* https://dzone.com/articles/nitrite-an-embedded-nosql-database-for-javaandroid
+* https://www.dizitart.org/hazelcast-database/
+* https://www.dizitart.org/hazelcast-database.html
+* https://dzone.com/articles/hazelcast-how-to-create-an-embedded-database-for-jav
+* https://dzone.com/articles/hazelcast-an-embedded-nosql-database-for-javaandroid
 * https://docs.spring.io/spring-data/data-commons/docs/1.6.1.RELEASE/reference/html/repositories.html
 * https://www.baeldung.com/spring-boot-access-h2-database-multiple-apps
 * https://www.baeldung.com/spring-bean

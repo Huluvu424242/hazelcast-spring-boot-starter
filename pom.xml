@@ -21,17 +21,17 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:https://github.com/Huluvu424242/nitrite-spring-boot-starter.git</connection>
-    <developerConnection>scm:git:git@github.com:Huluvu424242/nitrite-spring-boot-starter.git</developerConnection>
-    <url>https://github.com/Huluvu424242/nitrite-spring-boot-starter</url>
+    <connection>scm:git:https://github.com/Huluvu424242/hazelcast-spring-boot-starter.git</connection>
+    <developerConnection>scm:git:git@github.com:Huluvu424242/hazelcast-spring-boot-starter.git</developerConnection>
+    <url>https://github.com/Huluvu424242/hazelcast-spring-boot-starter</url>
   </scm>
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/Huluvu424242/nitrite-spring-boot-starter/issues/new</url>
+    <url>https://github.com/Huluvu424242/hazelcast-spring-boot-starter/issues/new</url>
   </issueManagement>
   <ciManagement>
     <system>Travis</system>
-    <url>https://travis-ci.org/Huluvu424242/nitrite-spring-boot-starter</url>
+    <url>https://travis-ci.org/Huluvu424242/hazelcast-spring-boot-starter</url>
   </ciManagement> 
   <distributionManagement>
     <repository>
@@ -67,10 +67,10 @@
       <scope>compile</scope>
     </dependency>
 
-    <!-- nitrite db -->
+    <!-- hazelcast db -->
     <dependency>
       <groupId>org.dizitart</groupId>
-      <artifactId>nitrite</artifactId>
+      <artifactId>hazelcast</artifactId>
       <version>3.3.0</version>
       <scope>compile</scope>
       <optional>true</optional>

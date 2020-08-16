@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration = \
-  com.github.huluvu424242.sbstarter.nitrite.NitriteAutoConfiguration, \
-  com.github.huluvu424242.sbstarter.nitrite.NitriteTemplateProvider
+  com.github.huluvu424242.sbstarter.hazelcast.NitriteAutoConfiguration, \
+  com.github.huluvu424242.sbstarter.hazelcast.NitriteTemplateProvider
 

@@ -7,15 +7,15 @@ Dieser Starter kann wie folgt in eine Spring Boot Anwendung eingebunden werden:
 .pom.xml
 [source,xml]
 ----
-<!-- nitrite db -->
+<!-- hazelcast db -->
 <dependency>
   <groupId>com.github.huluvu424242</groupId>
-  <artifactId>nitrite-spring-boot-starter</artifactId>
+  <artifactId>hazelcast-spring-boot-starter</artifactId>
   <version>0.0.2</version>
 </dependency>
 <dependency>
   <groupId>org.dizitart</groupId>
-  <artifactId>nitrite</artifactId>
+  <artifactId>hazelcast</artifactId>
   <version>3.3.0</version>
   <scope>compile</scope>
 </dependency>
@@ -27,11 +27,11 @@ Folgende Konfigurationsmöglichkeiten werden vom Starter realisiert:
 .application.properties
 [source,properties]
 ----
-nitrite.dbfilePath=<path zur Datenbankdatei | empty für in-memory Datenbank>
-nitrite.username=
-nitrite.password=
-nitrite.disableautocommit=<true | false>
-nitrite.compressed=<true | false>
+hazelcast.dbfilePath=<path zur Datenbankdatei | empty für in-memory Datenbank>
+hazelcast.username=
+hazelcast.password=
+hazelcast.disableautocommit=<true | false>
+hazelcast.compressed=<true | false>
 ----
 
 
