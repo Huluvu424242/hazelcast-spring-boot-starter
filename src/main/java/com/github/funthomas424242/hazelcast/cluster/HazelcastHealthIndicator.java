@@ -23,7 +23,7 @@ package com.github.funthomas424242.hazelcast.cluster;
  */
 
 import com.hazelcast.core.Cluster;
-import com.octoperf.cluster.api.ClusteringService;
+import com.github.funthomas424242.hazelcast.api.ClusteringService;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.experimental.FieldDefaults;

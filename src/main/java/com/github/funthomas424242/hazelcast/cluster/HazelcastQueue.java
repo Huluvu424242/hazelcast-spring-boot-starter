@@ -23,7 +23,7 @@ package com.github.funthomas424242.hazelcast.cluster;
  */
 
 import com.hazelcast.core.IQueue;
-import com.octoperf.cluster.api.AbstractClusteredQueue;
+import com.github.funthomas424242.hazelcast.api.AbstractClusteredQueue;
 import java.util.concurrent.BlockingQueue;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;

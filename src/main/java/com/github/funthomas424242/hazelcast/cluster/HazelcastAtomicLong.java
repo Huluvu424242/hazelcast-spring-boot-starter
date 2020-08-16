@@ -23,7 +23,7 @@ package com.github.funthomas424242.hazelcast.cluster;
  */
 
 import com.hazelcast.core.IAtomicLong;
-import com.octoperf.cluster.api.ClusteredAtomicLong;
+import com.github.funthomas424242.hazelcast.api.ClusteredAtomicLong;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.experimental.FieldDefaults;

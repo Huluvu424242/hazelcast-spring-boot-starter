@@ -23,7 +23,7 @@ package com.github.funthomas424242.hazelcast.cluster;
  */
 
 import com.hazelcast.core.IMap;
-import com.octoperf.cluster.api.ClusteredMap;
+import com.github.funthomas424242.hazelcast.api.ClusteredMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;

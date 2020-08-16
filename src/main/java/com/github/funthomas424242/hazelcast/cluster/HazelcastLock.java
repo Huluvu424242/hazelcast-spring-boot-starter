@@ -23,7 +23,7 @@ package com.github.funthomas424242.hazelcast.cluster;
  */
 
 import com.hazelcast.core.ILock;
-import com.octoperf.cluster.api.ClusteredLock;
+import com.github.funthomas424242.hazelcast.api.ClusteredLock;
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import lombok.experimental.FieldDefaults;

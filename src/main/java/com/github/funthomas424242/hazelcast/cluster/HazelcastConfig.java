@@ -32,7 +32,7 @@ import com.hazelcast.config.NetworkConfig;
 import com.hazelcast.config.TcpIpConfig;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.MembershipListener;
-import com.octoperf.cluster.api.ClusteringService;
+import com.github.funthomas424242.hazelcast.api.ClusteringService;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import lombok.extern.slf4j.Slf4j;
