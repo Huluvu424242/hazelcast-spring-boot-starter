@@ -9,7 +9,7 @@ Dieser Starter kann wie folgt in eine Spring Boot Anwendung eingebunden werden:
 ----
 <!-- nitrite db -->
 <dependency>
-  <groupId>com.github.funthomas424242</groupId>
+  <groupId>com.github.huluvu424242</groupId>
   <artifactId>nitrite-spring-boot-starter</artifactId>
   <version>0.0.2</version>
 </dependency>

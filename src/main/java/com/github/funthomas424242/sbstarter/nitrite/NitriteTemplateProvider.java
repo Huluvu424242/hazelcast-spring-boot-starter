@@ -1,4 +1,4 @@
-package com.github.funthomas424242.sbstarter.nitrite;
+package com.github.huluvu424242.sbstarter.nitrite;
 
 /*-
  * #%L
